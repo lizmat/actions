@@ -1,0 +1,11 @@
+use Test;
+use actions;
+
+plan 1;
+
+grammar A { token TOP { <.print>+ } }
+actions B { }
+
+is A.parse("foo", :actions(B)), "foo", 'did it parse ok';
+
+# vim: expandtab shiftwidth=4

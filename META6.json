@@ -1,0 +1,25 @@
+{
+  "auth": "zef:lizmat",
+  "authors": [
+    "Elizabeth Mattijsen"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Introduce \"actions\" keyword",
+  "license": "Artistic-2.0",
+  "name": "actions",
+  "perl": "6.d",
+  "provides": {
+    "actions": "lib/actions.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "",
+  "tags": [ "GRAMMAR", "ACTIONS"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}
