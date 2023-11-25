@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/lizmat/actions/actions/workflows/test.yml/badge.svg)](https://github.com/lizmat/actions/actions)
+
 NAME
 ====
 
@@ -18,9 +20,9 @@ say A.parse("foo", :actions(B));  # ｢foo｣
 DESCRIPTION
 ===========
 
-The actions distribution adds an `actions` keyword that is **almost** identical to the `class` keyword, except that it **limits** the execution of methods to methods that only exist within the <actions> itself.
+The actions distribution adds an `actions` keyword that is **almost** identical to the `class` keyword, except that it **limits** the execution of methods to methods that only exist within the `actions` itself.
 
-This is important when a class is used to have associated methods executed whenever a regex / token / rule in the grammar matches. The above example would fail if it were an `class B`, because it would try to execute the `Mu::print` method, which doesn't accept any arguments, resulting in:
+This is important when a class is used to have associated methods executed whenever a regex / token / rule in the grammar matches. The above example would fail if it were a `class B`, because it would try to execute the `Mu::print` method, which doesn't accept any arguments, resulting in:
 
     Cannot resolve caller print(B:U: A:D); none of these signatures matches:
     (Mu: *%_)

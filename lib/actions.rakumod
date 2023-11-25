@@ -33,11 +33,11 @@ say A.parse("foo", :actions(B));  # ｢foo｣
 
 The actions distribution adds an C<actions> keyword that is B<almost>
 identical to the C<class> keyword, except that it B<limits> the execution
-of methods to methods that only exist within the <actions> itself.
+of methods to methods that only exist within the C<actions> itself.
 
 This is important when a class is used to have associated methods executed
 whenever a regex / token / rule in the grammar matches.  The above
-example would fail if it were an C<class B>, because it would try to
+example would fail if it were a C<class B>, because it would try to
 execute the C<Mu::print> method, which doesn't accept any arguments,
 resulting in:
 

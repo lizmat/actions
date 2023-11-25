@@ -16,8 +16,10 @@
   },
   "resources": [
   ],
-  "source-url": "",
-  "tags": [ "GRAMMAR", "ACTIONS"
+  "source-url": "https://github.com/lizmat/actions.git",
+  "tags": [
+    "GRAMMAR",
+    "ACTIONS"
   ],
   "test-depends": [
   ],
