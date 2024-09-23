@@ -1,6 +1,8 @@
 Revision history for actions
 
 {{$NEXT}}
+
+0.0.2  2024-09-23T14:35:04+02:00
     - Add sponsor button
     - Add CI badges for each OS
     - Update copyright year
