@@ -1,11 +1,19 @@
 use Test;
 use actions;
 
-plan 1;
+plan 2;
 
 grammar A { token TOP { <.print>+ } }
+
 actions B { }
 
 is A.parse("foo", :actions(B)), "foo", 'did it parse ok';
+
+my int $TOP;
+my role T { method TOP { ++$TOP } }
+actions C does T { }
+
+A.parse("foo", :actions(C));
+is $TOP, 1, 'did the TOP method get executed';
 
 # vim: expandtab shiftwidth=4
