@@ -10,7 +10,7 @@ actions B { }
 is A.parse("foo", :actions(B)), "foo", 'did it parse ok';
 
 my int $TOP;
-my role T { method TOP { ++$TOP } }
+my role T { method TOP($/) { ++$TOP } }
 actions C does T { }
 
 A.parse("foo", :actions(C));

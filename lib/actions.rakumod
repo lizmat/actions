@@ -2,8 +2,7 @@ class MetamodelX::ActionsHOW is Metamodel::ClassHOW {
     # Just return the class itself in its MRO
     method mro(|) {
         use nqp;
-        my $mro := callsame();
-nqp::say(nqp::pop($mro).Str);  # Mu
+        my $mro := nqp::clone(callsame);
         nqp::pop($mro);  # Any
         $mro
     }
