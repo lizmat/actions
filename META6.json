@@ -3,6 +3,8 @@
   "authors": [
     "Elizabeth Mattijsen"
   ],
+  "build-depends": [
+  ],
   "depends": [
   ],
   "description": "Introduce \"actions\" keyword",
@@ -12,6 +14,9 @@
     "actions": "lib/actions.rakumod"
   },
   "raku": "6.d",
+  "resources": [
+  ],
+  "source-url": "https://codeberg.org/lizmat/actions.git",
   "support": {
     "bugtracker": "https://codeberg.org/lizmat/actions.git",
     "email": "liz@raku.rocks",
@@ -21,5 +26,7 @@
     "GRAMMAR",
     "ACTIONS"
   ],
-  "version": "0.0.2"
+  "test-depends": [
+  ],
+  "version": "0.0.3"
 }
